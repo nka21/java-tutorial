@@ -2,13 +2,14 @@ package chapter_02;
 
 /**
  * 実行するためのクラス
+ * 
  * @version 1.0
  * @author naoki
  */
 public class Variable1 {
     /**
-    * mainメソッド
-    */
+     * mainメソッド
+     */
     public static void main(String[] args) {
         int number; // int型の変数numberを宣言
         number = 10; // numberに10を代入

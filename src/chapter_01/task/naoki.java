@@ -2,14 +2,16 @@ package chapter_01.task;
 
 /**
  * 自己紹介クラス
+ * 
  * @version 1.0
  * @author naoki
  */
 public class naoki {
-  /**
-  * mainメソッド
-  * @param args 無し
-  */
+    /**
+     * mainメソッド
+     * 
+     * @param args 無し
+     */
     public static void main(String[] args) {
         System.out.println("自己紹介をおこないます");
         System.out.println("=========================");
