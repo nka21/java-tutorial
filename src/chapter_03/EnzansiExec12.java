@@ -20,7 +20,7 @@ public class EnzansiExec12 {
         System.out.println("!(a > 0 && a < 10 ) = " + a3);
         System.out.println("( a == 0 ) ^ ( b == 0 ) = " + a4);
 
-        // 実行例
+        // 実行例 input: 5 0
         // a > 0 && a < 10 = true
         // a <= 0 || a >= 10 = false
         // !(a > 0 && a < 10 ) = false
