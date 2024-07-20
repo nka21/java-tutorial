@@ -1,0 +1,10 @@
+{
+  "java.format.settings.profile": "GoogleStyle",
+  "java.format.settings.url": "eclipse-java-google-style.xml",
+  "[java]": {
+    "editor.tabSize": 4,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+  }
+}
