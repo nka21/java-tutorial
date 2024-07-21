@@ -1,8 +1,7 @@
-package chapter6.taskFile;
+package chapter_06.tasks;
 
 /**
- * 入力値のバリデーションを行うクラス
- * 元金、年利率、運用年数の入力値が適切な範囲内にあるかをチェックします。
+ * 入力値のバリデーションを行うクラス 元金、年利率、運用年数の入力値が適切な範囲内にあるかをチェックします。
  */
 public class InputValidator {
     /**

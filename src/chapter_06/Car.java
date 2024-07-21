@@ -1,4 +1,4 @@
-package chapter6;
+package chapter_06;
 
 public class Car {
     private String carName;
@@ -7,10 +7,10 @@ public class Car {
     private String bodyColor;
 
     public Car(String carName, int number, int gas, String bodyColor) {
-      this.carName = carName;
-      this.number = number;
-      this.gas = gas;
-      this.bodyColor = bodyColor;
+        this.carName = carName;
+        this.number = number;
+        this.gas = gas;
+        this.bodyColor = bodyColor;
     }
 
     public void display() {
@@ -24,20 +24,22 @@ public class Car {
 
     /**
      * 走行するためのメソッド
-     * @param direction String型  走行方向
+     * 
+     * @param direction String型 走行方向
      * @return 無し
      */
     public void goRun(String direction) {
         gas--; // "gass" を "gas" に修正
-        System.out.println( direction + "へ進む" );
+        System.out.println(direction + "へ進む");
     }
 
     /**
      * 停止するためのメソッド
+     * 
      * @param 無し
      * @return 無し
      */
     public void stop() {
-        System.out.println( "止まる" );
+        System.out.println("止まる");
     }
 }

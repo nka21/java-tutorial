@@ -1,8 +1,7 @@
-package chapter6.taskFile;
+package chapter_06.tasks;
 
 /**
- * メイン処理を行うクラス。
- * コマンドライン引数から元金、金利、年数を受け取り、複利計算を行います。
+ * メイン処理を行うクラス。 コマンドライン引数から元金、金利、年数を受け取り、複利計算を行います。
  */
 public class Main {
     public static void main(String[] args) {
@@ -21,12 +20,14 @@ public class Main {
         int year = Integer.parseInt(args[2]); // 年数
 
         // 入力値のバリデーション
-        if (!validator.isValidPrincipal(principal) || !validator.isValidRate(rate) || !validator.isValidYear(year)) {
+        if (!validator.isValidPrincipal(principal) || !validator.isValidRate(rate)
+                || !validator.isValidYear(year)) {
             return; // 不正な入力があれば処理を終了
         }
 
         // 複利計算を行うクラスのインスタンス化
-        CompoundInterestCalculator calculator = new CompoundInterestCalculator(principal, rate, year);
+        CompoundInterestCalculator calculator =
+                new CompoundInterestCalculator(principal, rate, year);
         // 複利計算を行い、結果を出力
         calculator.calculateAndPrintCompoundInterest();
     }

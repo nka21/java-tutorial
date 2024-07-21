@@ -1,5 +1,5 @@
 // CarExec.java
-package chapter6;
+package chapter_06;
 
 public class CarExec {
     public static void main(String[] args) {

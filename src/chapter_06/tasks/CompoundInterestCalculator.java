@@ -1,4 +1,4 @@
-package chapter6.taskFile;
+package chapter_06.tasks;
 
 /**
  * 複利計算を行うクラスです。
