@@ -1,4 +1,4 @@
-package chapter_03.task;
+package chapter_03.tasks;
 
 public class OperatorExec {
     public static void main(String[] args) {

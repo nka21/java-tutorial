@@ -1,4 +1,4 @@
-package chapter_02.task;
+package chapter_02.tasks;
 
 public class DataExec {
     /**

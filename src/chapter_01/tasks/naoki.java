@@ -1,4 +1,4 @@
-package chapter_01.task;
+package chapter_01.tasks;
 
 /**
  * 自己紹介クラス
