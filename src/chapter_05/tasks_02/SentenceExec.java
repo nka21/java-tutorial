@@ -7,13 +7,13 @@ public class SentenceExec {
                 "The Java programming language stands out as a versatile, concurrent, class-based, and object-oriented language. Its design prioritizes simplicity, ensuring that a broad spectrum of programmers can attain proficiency in its usage. While Java shares some similarities with C and C++, its organizational structure sets it apart, omitting certain aspects from its predecessors and incorporating ideas from other programming languages. Unlike a research-oriented language, Java is meticulously crafted to serve as a production language. Following C. A. R. Hoare's advice on language design, the developers have steered clear of introducing untested features, emphasizing stability and reliability.Java boasts strong and static typing, a feature that clearly delineates between compile-time errors, which must be identified during compilation, and runtime errors. During compile time, programs are translated into a machine-independent byte code representation, contributing to the language's portability and versatility. This approach aligns with Hoare's principles, ensuring that the design is robust and error-free, providing a solid foundation for the development of a wide range of applications.";
 
         // 文字のカウント
-        int[] letterCounts = countLetters(sentence);
+        int[] yMaxAxis = countLetters(sentence);
 
         // 最大値の取得
-        int maxCount = getMaxCount(letterCounts);
+        int xMaxAxis = getMaxCount(yMaxAxis);
 
         // グラフの構築
-        boolean[][] graph = buildGraph(letterCounts, maxCount);
+        boolean[][] graph = buildGraph(yMaxAxis, xMaxAxis);
 
         // グラフの出力
         printGraph(graph);
@@ -59,30 +59,30 @@ public class SentenceExec {
     /*
      * countLetters配列の最大値を求めるメソッド グラフ構築の時に、Y軸として必要になる
      */
-    private static int getMaxCount(int[] letterCounts) {
-        int maxCount = 0;
+    private static int getMaxCount(int[] yMaxAxis) {
+        int xMaxAxis = 0;
 
         // 最大値の更新
-        for (int count : letterCounts) {
-            if (count > maxCount) {
-                maxCount = count;
+        for (int count : yMaxAxis) {
+            if (count > xMaxAxis) {
+                xMaxAxis = count;
             }
         }
 
-        return maxCount;
+        return xMaxAxis;
     }
 
     /*
      * グラフの構築をするメソッド
      */
-    private static boolean[][] buildGraph(int[] letterCounts, int maxCount) {
+    private static boolean[][] buildGraph(int[] yMaxAxis, int xMaxAxis) {
         // letterCountsとmaxCountで何行何列かを定義して、全てをfalseにする
-        boolean[][] graph = new boolean[letterCounts.length][maxCount];
+        boolean[][] graph = new boolean[yMaxAxis.length][xMaxAxis];
 
         // falseにされた2次元配列を、trueにしていく
-        for (int x = 0; x < letterCounts.length; x++) {
-            for (int y = 0; y < maxCount; y++) {
-                graph[x][y] = y < letterCounts[x];
+        for (int x = 0; x < yMaxAxis.length; x++) {
+            for (int y = 0; y < xMaxAxis; y++) {
+                graph[x][y] = y < yMaxAxis[x];
             }
         }
 
